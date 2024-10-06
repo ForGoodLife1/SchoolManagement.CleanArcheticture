@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "hOsmgbOdaA7E0GvL0KdP7KTTro2vvSj3v3xXU+rcylA=",
+  "Source": "SchoolProject.Api",
+  "BasePath": "_content/SchoolProject.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SchoolProject.Api\\wwwroot",
+      "Source": "SchoolProject.Api",
+      "ContentRoot": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Api\\wwwroot\\",
+      "BasePath": "_content/SchoolProject.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Api\\wwwroot\\Instructors\\33dc20a0b6e844d18da60711272ef70d.jpg",
+      "SourceId": "SchoolProject.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Api\\wwwroot\\",
+      "BasePath": "_content/SchoolProject.Api",
+      "RelativePath": "Instructors/33dc20a0b6e844d18da60711272ef70d.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Instructors\\33dc20a0b6e844d18da60711272ef70d.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Api\\wwwroot\\Instructors\\de8d3ad754044450b87d7ed3a0c4d961.jfif",
+      "SourceId": "SchoolProject.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Api\\wwwroot\\",
+      "BasePath": "_content/SchoolProject.Api",
+      "RelativePath": "Instructors/de8d3ad754044450b87d7ed3a0c4d961.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Instructors\\de8d3ad754044450b87d7ed3a0c4d961.jfif"
+    }
+  ]
+}

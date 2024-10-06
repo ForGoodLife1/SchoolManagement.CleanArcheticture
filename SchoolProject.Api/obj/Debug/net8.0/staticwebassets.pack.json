@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Api\\wwwroot\\Instructors\\33dc20a0b6e844d18da60711272ef70d.jpg",
+      "PackagePath": "staticwebassets\\Instructors\\33dc20a0b6e844d18da60711272ef70d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Api\\wwwroot\\Instructors\\de8d3ad754044450b87d7ed3a0c4d961.jfif",
+      "PackagePath": "staticwebassets\\Instructors\\de8d3ad754044450b87d7ed3a0c4d961.jfif"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SchoolProject.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SchoolProject.Api.props",
+      "PackagePath": "build\\SchoolProject.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SchoolProject.Api.props",
+      "PackagePath": "buildMultiTargeting\\SchoolProject.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SchoolProject.Api.props",
+      "PackagePath": "buildTransitive\\SchoolProject.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
