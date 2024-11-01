@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SchoolProject.Api.Base;
 using SchoolProject.Core.Features.ApplicationUser.Commands.Models;
 using SchoolProject.Core.Features.ApplicationUser.Queries.Models;
@@ -7,7 +8,7 @@ namespace SchoolProject.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
+    [Authorize(Roles = "Admin,User")]
     public class ApplicationUserController : AppControllerBase
     {
         [HttpPost(Router.ApplicationUserRouting.Create)]
@@ -27,7 +28,7 @@ namespace SchoolProject.Api.Controllers
         {
             return NewResult(await Mediator.Send(new GetUserByIdQuery(id)));
         }
-
+        [HttpPut(Router.ApplicationUserRouting.Edit)]
         public async Task<IActionResult> Edit([FromBody] EditUserCommand command)
         {
             var response = await Mediator.Send(command);
@@ -38,13 +39,11 @@ namespace SchoolProject.Api.Controllers
         {
             return NewResult(await Mediator.Send(new DeleteUserCommand(id)));
         }
-
-
+        [HttpPut(Router.ApplicationUserRouting.ChangePassword)]
         public async Task<IActionResult> ChangePassword([FromBody] ChangeUserPasswordCommand command)
         {
             var response = await Mediator.Send(command);
             return NewResult(response);
         }
     }
-
 }

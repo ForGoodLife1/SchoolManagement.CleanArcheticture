@@ -13,25 +13,34 @@ using SchoolProject.Infarastructure;
 using SchoolProject.Infarastructure.Context;
 using SchoolProject.Infrustructure.Seeder;
 using SchoolProject.Service;
+using Serilog;
 using System.Globalization;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<ApplicationDBContext>(Options =>
-        Options.UseSqlServer(builder.Configuration.GetConnectionString("constr"),
-             b => b.MigrationsAssembly(typeof(ApplicationDBContext).Assembly.FullName)));
 
-builder.Services.AddServiceDependencies()
-                .AddInfrastructureDependencies()
-                .AddCoreDependencies()
-                .AddServiceRegisteration(builder.Configuration);
+//Connection To SQL Server
+builder.Services.AddDbContext<ApplicationDBContext>(option =>
+{
+    option.UseSqlServer(builder.Configuration.GetConnectionString("constr"));
+});
+
+
+#region Dependency injections
+
+builder.Services.AddInfrastructureDependencies()
+                 .AddServiceDependencies()
+                 .AddCoreDependencies()
+                 .AddServiceRegisteration(builder.Configuration);
+#endregion
+
 #region Localization
 builder.Services.AddControllersWithViews();
 builder.Services.AddLocalization(opt =>
@@ -53,6 +62,7 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.SupportedCultures = supportedCultures;
     options.SupportedUICultures = supportedCultures;
 });
+
 #endregion
 
 #region AllowCORS
@@ -69,6 +79,7 @@ builder.Services.AddCors(options =>
 });
 
 #endregion
+
 builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 builder.Services.AddTransient<IUrlHelper>(x =>
 {
@@ -78,10 +89,10 @@ builder.Services.AddTransient<IUrlHelper>(x =>
 });
 builder.Services.AddTransient<AuthFilter>();
 
-/*//Serilog
+//Serilog
 Log.Logger=new LoggerConfiguration()
               .ReadFrom.Configuration(builder.Configuration).CreateLogger();
-builder.Services.AddSerilog();*/
+builder.Services.AddSerilog();
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())
@@ -92,16 +103,19 @@ using (var scope = app.Services.CreateScope())
     await UserSeeder.SeedAsync(userManager);
 }
 
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 #region Localization Middleware
 var options = app.Services.GetService<IOptions<RequestLocalizationOptions>>();
 app.UseRequestLocalization(options.Value);
 #endregion
+
 app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.UseHttpsRedirection();
@@ -114,3 +128,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+;

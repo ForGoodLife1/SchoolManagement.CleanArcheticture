@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Infarastructure\\SchoolProject.Infarastructure.csproj": {}
+    "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Infarastructure\\SchoolProject.Infarastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Data\\SchoolProject.Data.csproj": {
+    "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Data\\SchoolProject.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Data\\SchoolProject.Data.csproj",
+        "projectUniqueName": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Data\\SchoolProject.Data.csproj",
         "projectName": "SchoolProject.Data",
-        "projectPath": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Data\\SchoolProject.Data.csproj",
+        "projectPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Data\\SchoolProject.Data.csproj",
         "packagesPath": "C:\\Users\\fares\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Data\\obj\\",
+        "outputPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fares\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Infarastructure\\SchoolProject.Infarastructure.csproj": {
+    "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Infarastructure\\SchoolProject.Infarastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Infarastructure\\SchoolProject.Infarastructure.csproj",
+        "projectUniqueName": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Infarastructure\\SchoolProject.Infarastructure.csproj",
         "projectName": "SchoolProject.Infarastructure",
-        "projectPath": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Infarastructure\\SchoolProject.Infarastructure.csproj",
+        "projectPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Infarastructure\\SchoolProject.Infarastructure.csproj",
         "packagesPath": "C:\\Users\\fares\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Infarastructure\\obj\\",
+        "outputPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Infarastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fares\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -104,8 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Data\\SchoolProject.Data.csproj": {
-                "projectPath": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Data\\SchoolProject.Data.csproj"
+              "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Data\\SchoolProject.Data.csproj": {
+                "projectPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Data\\SchoolProject.Data.csproj"
               }
             }
           }
@@ -141,17 +141,17 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.8, )"
             },
             "StoredProcedureEFCore": {
               "target": "Package",

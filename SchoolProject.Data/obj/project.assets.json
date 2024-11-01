@@ -2057,11 +2057,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Data\\SchoolProject.Data.csproj",
+      "projectUniqueName": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Data\\SchoolProject.Data.csproj",
       "projectName": "SchoolProject.Data",
-      "projectPath": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Data\\SchoolProject.Data.csproj",
+      "projectPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Data\\SchoolProject.Data.csproj",
       "packagesPath": "C:\\Users\\fares\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fares\\source\\repos\\SchoolProject.Api\\SchoolProject.Data\\obj\\",
+      "outputPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\SchoolProject.Api\\Back\\SchoolProject.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fares\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2128,13 +2128,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    }
-  ]
+  }
 }
