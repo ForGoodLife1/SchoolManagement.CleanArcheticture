@@ -14,8 +14,11 @@ using System.Linq.Expressions;
 namespace SchoolProject.Core.Features.Department.Queries.Handlers
 {
     public class DepartmentQueryHandler : ResponseHandler,
-         IRequestHandler<GetDepartmentByIDQuery, Response<GetDepartmentByIDResponse>>
+         IRequestHandler<GetDepartmentByIDQuery, Response<GetDepartmentByIDResponse>>,
+         IRequestHandler<GetDepartmentStudentListCountQuery, Response<List<GetDepartmentStudentListCountResults>>>,
+         IRequestHandler<GetDepartmentStudentCountByIDQuery, Response<GetDepartmentStudentCountByIDResult>>
     {
+
 
         #region Fields
         private readonly IDepartmentService _departmentService;
